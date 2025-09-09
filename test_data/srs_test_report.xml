@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="130" failures="0" disabled="0" errors="0" timestamp="2025-04-03T01:08:05+00:00" time="x.xxx" name="AllTests">
+  <testsuite name="NomDuTestSuite" tests="10" failures="2" errors="0" skipped="1" time="3.456">
+      <testcase classname="Chemin.ClasseDeTest" name="testPass" time="0.123">
+	    <properties>
+          <property name="test_id" value="TC-888"/>
+          <property name="description" value="How do we test"/>
+          <property name="objective" value="SRS-56372 SRS-55619 Pass Fail Criteria SRS-55609"/>
+        </properties>
+	  </testcase>
+      <testcase classname="Chemin.ClasseDeTest" name="testFail" time="0.456">
+	    <properties>
+          <property name="test_id" value="TC-777"/>
+          <property name="description" value="How do we test"/>
+          <property name="objective" value="SRS-000 Pass Fail Criteria"/>
+        </properties>
+        <failure message="AssertionError: expected 1 but got 2" type="AssertionError">
+          Détails de l’erreur ici
+        </failure>
+      </testcase>
+      <testcase classname="Chemin.ClasseDeTest" name="testIgnored" time="0.001">
+	    <properties>
+          <property name="test_id" value="TC-666"/>
+          <property name="description" value="How do we test"/>
+          <property name="objective" value="SRS-000 Pass Fail Criteria"/>
+        </properties>	  
+          <skipped/>
+      </testcase>
+      <testcase classname="Chemin.ClasseDeTest" name="testError" time="0.001">
+	    <properties>
+          <property name="test_id" value="TC-555"/>
+          <property name="description" value="How do we test"/>
+          <property name="objective" value="SRS-55613 Pass Fail Criteria SRS-55609 An other criteria"/>
+        </properties>	  
+          <error/>
+      </testcase>	  
+    </testsuite>
+</testsuites>
